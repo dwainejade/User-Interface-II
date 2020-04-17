@@ -1,1 +1,202 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*** MY   CODE   STARTS   HERE ***/
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 4vh;
+    color: whitesmoke;
+    background-color: rgb(40, 48, 63);
+}
+
+h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.navbar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.links {
+    background-color: slategray;
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+}
+
+a:hover{
+    background: rgb(40, 48, 63);
+}
+
+.link-active {
+    background: rgb(40, 48, 63);
+}
+
+a:visited {
+    color: white;
+}
+
+.intro {
+    font-size: 1.6rem;
+    margin: 20px 10%;
+}
+
+.main-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.main-pic img {
+    display: flex;
+    width: 95%;
+    max-width: 1100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.pics {
+    margin-top: 5%;
+}
+
+.pics-caption {
+    padding-top: 10px;
+    width: 20%;
+    font-size: 1.6rem;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    padding: 3% 5%;
+    margin-top: 8%;
+    background-color: rgb(40, 48, 63);
+}
+
+.contact a{
+    color: whitesmoke;
+    background-color: slategray;
+    font-size: 2rem;
+    border: 1px solid slategray;
+    padding: 8px;
+    margin: 10px;
+}
+
+@media (max-width: 676px){
+    .navbar{
+        font-size: 6vw;
+        margin-top: 0;
+    }
+    p{
+        font-size: 2.2rem;
+    }
+    .container{
+
+    }
+    .container img{
+        width: 70%
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .pics-caption{
+        font-size: 2.2rem;
+        padding-top: 5%;
+        width: 80%;
+        text-align: center;
+        order: 1;
+    }
+}
+
+@media (max-width:500px){
+    .navbar{
+        font-size:5vw;
+        margin-top: 0;
+        justify-content: center;
+        row-gap: 10%;
+    }
+    p{
+        font-size: 2.2rem;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .container img{
+        width: 100%;
+    }
+    .pics-caption{
+        font-size: 2.2rem;
+        padding-top: 5%;
+        width: 80%;
+        text-align: center;
+    }
+}
