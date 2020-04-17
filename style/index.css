@@ -47,7 +47,9 @@ table {
 	border-spacing: 0;
 }
 
-/* MY CODE STARTS HERE */
+
+
+/*** MY   CODE   STARTS   HERE ***/
 
 html {
     font-size: 62.5%;
@@ -71,7 +73,7 @@ h2 {
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 a{
@@ -82,7 +84,6 @@ a{
     background-color: slategray;
     color: white;
     display: flex;
-    box-shadow: gray;
     padding: 10px 20px;
 }
 
@@ -150,10 +151,52 @@ a:visited {
     margin: 10px;
 }
 
-.footer-nav p{
-    text-align: center;
-    font-size: 1.6rem;
-    color: white;
-    background-color: rgb(40, 48, 63);
-    padding-bottom: 2rem;
+@media (max-width: 676px){
+    .navbar{
+        font-size: 6vw;
+        margin-top: 0;
+    }
+    p{
+        font-size: 2.2rem;
+    }
+    .container{
+
+    }
+    .container img{
+        width: 70%
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .pics-caption{
+        font-size: 2.2rem;
+        padding-top: 5%;
+        width: 80%;
+        text-align: center;
+        order: 1;
+    }
+}
+
+@media (max-width:500px){
+    .navbar{
+        font-size:5vw;
+        margin-top: 0;
+        justify-content: center;
+        row-gap: 10%;
+    }
+    p{
+        font-size: 2.2rem;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .container img{
+        width: 100%;
+    }
+    .pics-caption{
+        font-size: 2.2rem;
+        padding-top: 5%;
+        width: 80%;
+        text-align: center;
+    }
 }
